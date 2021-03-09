@@ -51,9 +51,10 @@ Windows Subsystem for Linux).
    snippets within [the HTML demos](https://html.alia.dev/) and [the
    docs](https://alia.dev/).
 
-   Just rebuild and do a hard-refresh (Ctrl-F5) to see your changes.
+   Just rebuild and do a hard refresh (Ctrl-F5) to see your changes.
 
-   Also feel free to edit `index.html` and `style.css`.
+   Also feel free to edit `index.html` and `style.css` right from the `src/`
+   directory.
 
 The repository is configured to automatically deploy to the `gh-pages` branch,
 so if you enable GitHub Pages for your repository, you can also see your
