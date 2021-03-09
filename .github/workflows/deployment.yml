@@ -10,7 +10,7 @@ env:
   EM_CACHE_FOLDER: 'emsdk-cache'
 
 jobs:
-  docs:
+  deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
