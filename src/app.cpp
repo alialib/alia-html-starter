@@ -19,13 +19,17 @@ greeting_ui(html::context ctx, duplex<std::string> name)
     alia_end
 }
 
+// Here's the main UI function for our app.
 void
 app_ui(html::context ctx)
 {
+    // Set the document title.
     document_title(ctx, "alia/HTML Starter");
 
+    // Root our content in the HTML body at the element with the ID
+    // "app-content".
     placeholder_root(ctx, "app-content", [&] {
-        h1(ctx, "Hello, World!").attr("class", "mt-5 mb-3");
+        h1(ctx, "Hello, World!").classes("mt-5 mb-3");
 
         p(ctx, "Welcome to alia/HTML!");
 
@@ -34,6 +38,7 @@ app_ui(html::context ctx)
     });
 }
 
+// main() just initializes alia/HTML and hooks up our app UI.
 int
 main()
 {
