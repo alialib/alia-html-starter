@@ -3,9 +3,6 @@ project(alia-html-starter)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Apply some emscripten optimizations flags if we're in release mode.
-include(cmake/release-mode.cmake)
-
 # Add alia-html.
 include(cmake/alia-html.cmake)
 
