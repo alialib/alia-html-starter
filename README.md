@@ -26,10 +26,24 @@ https://alialib.github.io/alia-html-starter
    make -j
    ```
 
+1. To view your app, you'll need to run a web server to serve the files within
+   the `build/deploy` directory. A Python 2.x script is included that will do
+   this for you:
+
+   ```
+   cd deploy
+   python2 ../../scripts/run-web-server.py
+   ```
+
+   With that running, you can navigate to http://localhost:8020/ to see your
+   app.
+
 1. Edit `app.cpp` and try some things. You can find lots of ready-to-use code
    snippets within [the HTML demos](https://html.alia.dev/) and [the
    docs](https://alia.dev/).
 
-The repository is configured to automatically deploy updates to GitHub pages,
-so you can see your creation at
-`https://<your-username>.github.io/<your-repository>`.
+   Also feel free to edit `index.html` and `style.css`.
+
+The repository is configured to automatically deploy to the `gh-pages` branch,
+so if you enable GitHub Pages for your repository, you can also see your
+creation live on the web!
