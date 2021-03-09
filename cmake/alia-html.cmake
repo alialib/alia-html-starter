@@ -10,8 +10,6 @@ FetchContent_MakeAvailable(alia-html)
 string(APPEND CMAKE_CXX_FLAGS
     " -s EXTRA_EXPORTED_RUNTIME_METHODS='[\"UTF8ToString\"]'")
 string(APPEND CMAKE_CXX_FLAGS
-    " -s MODULARIZE=1")
-string(APPEND CMAKE_CXX_FLAGS
     " -s ENVIRONMENT=web")
 string(APPEND CMAKE_CXX_FLAGS
     " -s WASM=1 --bind")
