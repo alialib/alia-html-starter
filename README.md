@@ -17,10 +17,12 @@ Windows Subsystem for Linux).
    [Emscripten](https://emscripten.org/docs/getting_started/downloads.html)
    (1.39.18 or higher).
 
-2. Use this repository as a template to create your own instance of it. (Just
+1. Use this repository as a template to create your own instance of it. (Just
    press the big green button at the top.)
 
-3. Build it. (Be sure to activate Emscripten for your shell before doing this.)
+1. Clone your repository locally.
+
+1. Build it. (Be sure to activate Emscripten for your shell before doing this.)
 
    ```
    mkdir build
@@ -33,7 +35,7 @@ Windows Subsystem for Linux).
    automatically handle this process. Just select the Emscripten kit and it
    should all work.
 
-4. To view your app, you'll need to run a web server to serve the files within
+1. To view your app, you'll need to run a web server to serve the files within
    the `build/deploy` directory. A Python 2.x script is included that will do
    this for you:
 
@@ -45,7 +47,7 @@ Windows Subsystem for Linux).
    With that running, you can navigate to http://localhost:8020/ to see your
    app.
 
-5. Edit `app.cpp` and try some things. You can find lots of ready-to-use code
+1. Edit `app.cpp` and try some things. You can find lots of ready-to-use code
    snippets within [the HTML demos](https://html.alia.dev/) and [the
    docs](https://alia.dev/).
 
