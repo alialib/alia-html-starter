@@ -26,12 +26,16 @@ https://alialib.github.io/alia-html-starter
    make -j
    ```
 
+   Another option is to use VS Code with the CMake Tools extension to
+   automatically handle this process. Just select the Emscripten kit and it
+   should all work.
+
 1. To view your app, you'll need to run a web server to serve the files within
    the `build/deploy` directory. A Python 2.x script is included that will do
    this for you:
 
    ```
-   cd deploy
+   cd build/deploy
    python2 ../../scripts/run-web-server.py
    ```
 
@@ -41,6 +45,8 @@ https://alialib.github.io/alia-html-starter
 1. Edit `app.cpp` and try some things. You can find lots of ready-to-use code
    snippets within [the HTML demos](https://html.alia.dev/) and [the
    docs](https://alia.dev/).
+
+   Just rebuild and do a hard-refresh (ctrl-F5) to see your changes.
 
    Also feel free to edit `index.html` and `style.css`.
 
