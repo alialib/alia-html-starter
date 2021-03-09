@@ -1,0 +1,43 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  EM_VERSION: 2.0.15
+  EM_CACHE_FOLDER: 'emsdk-cache'
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Graphviz
+        run: |
+          sudo add-apt-repository universe
+          sudo apt-get update -qy
+          sudo apt install graphviz
+      - name: Set up cache
+        id: cache-system-libraries
+        uses: actions/cache@v2
+        with:
+          path: ${{env.EM_CACHE_FOLDER}}
+          key: ${{env.EM_VERSION}}-${{ runner.os }}
+      - uses: mymindstorm/setup-emsdk@v7
+        with:
+          version: ${{env.EM_VERSION}}
+          actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
+      - name: Build
+        run: |
+          mkdir build
+          cd build
+          emcmake cmake -DCMAKE_BUILD_TYPE=Release ..
+          make -j
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: build/deploy
+          single-commit: true
