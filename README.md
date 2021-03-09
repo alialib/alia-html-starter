@@ -1,5 +1,7 @@
 # alia-html-starter
 
+[![Deployment](https://github.com/alialib/alia-html-starter/actions/workflows/deployment.yml/badge.svg)](https://github.com/alialib/alia-html-starter/actions/workflows/deployment.yml)
+
 This is a starter template for using alia/HTML.
 
 You can see it deployed here:
