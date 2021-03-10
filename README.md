@@ -47,8 +47,8 @@ Windows Subsystem for Linux).
    With that running, you can navigate to http://localhost:8020/ to see your
    app.
 
-1. Edit `app.cpp` and try some things. You can find lots of ready-to-use code
-   snippets within [the HTML demos](https://html.alia.dev/) and [the
+1. Edit `src/app.cpp` and try some things. You can find lots of ready-to-use
+   code snippets within [the HTML demos](https://html.alia.dev/) and [the
    docs](https://alia.dev/).
 
    Just rebuild and do a hard refresh (Ctrl-F5) to see your changes.
