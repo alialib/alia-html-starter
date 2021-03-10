@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 include(cmake/alia-html.cmake)
 
 # Add the nlohmann/json library if you want to use it for HTML.
-include(cmake/json.cmake)
+# include(cmake/json.cmake)
 
 # Create a subdirectory in the build dir that we'll use to accumulate all the
 # files that need to be deployed to the web.

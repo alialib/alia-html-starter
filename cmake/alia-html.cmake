@@ -1,8 +1,11 @@
-message(STATUS "Fetching alia-html")
 include(FetchContent)
+
+message(STATUS "Fetching alia-html")
+
 FetchContent_Declare(alia-html
   GIT_REPOSITORY https://github.com/alialib/alia-html
   GIT_TAG main
+  GIT_SHALLOW TRUE
 )
 FetchContent_MakeAvailable(alia-html)
 
