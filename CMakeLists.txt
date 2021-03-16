@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Add alia-html.
 include(cmake/alia-html.cmake)
 
-# Add the nlohmann/json library if you want to use it for HTML.
+# Add the nlohmann/json library if you want to use it for REST queries.
 # include(cmake/json.cmake)
 
 # Create a subdirectory in the build dir that we'll use to accumulate all the
