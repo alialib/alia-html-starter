@@ -14,11 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Graphviz
-        run: |
-          sudo add-apt-repository universe
-          sudo apt-get update -qy
-          sudo apt install graphviz
       - name: Set up cache
         id: cache-system-libraries
         uses: actions/cache@v2
