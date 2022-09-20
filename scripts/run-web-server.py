@@ -1,15 +1,10 @@
 #!/usr/bin/env python
-import BaseHTTPServer, SimpleHTTPServer
+from http.server import SimpleHTTPRequestHandler
+from socketserver import TCPServer
+
 
 port = 8020
-print "Running on port %d" % port
-
-SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map[
-    '.wasm'] = 'application/wasm'
-
-httpd = BaseHTTPServer.HTTPServer(('localhost', port),
-                                  SimpleHTTPServer.SimpleHTTPRequestHandler)
-
-print "Mapping \".wasm\" to \"%s\"" % \
-    SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map['.wasm']
+server_address = ('localhost', port)
+print(f"Running on port {port}")
+httpd = TCPServer(server_address, SimpleHTTPRequestHandler)
 httpd.serve_forever()
