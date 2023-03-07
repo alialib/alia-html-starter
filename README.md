@@ -36,12 +36,12 @@ Windows Subsystem for Linux).
    should all work.
 
 1. To view your app, you'll need to run a web server to serve the files within
-   the `build/deploy` directory. A Python 2.x script is included that will do
+   the `build/deploy` directory. A Python 3.x script is included that will do
    this for you:
 
    ```
    cd build/deploy
-   python2 ../../scripts/run-web-server.py
+   python3 ../../scripts/run-web-server.py
    ```
 
    With that running, you can navigate to http://localhost:8020/ to see your
