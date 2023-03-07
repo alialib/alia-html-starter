@@ -1,0 +1,12 @@
+input {
+    display: block;
+    margin: 16px 2px;
+}
+
+p {
+    margin: 16px 0px;
+}
+
+b {
+    font-weight: bold;
+}
